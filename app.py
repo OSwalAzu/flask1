@@ -8,7 +8,7 @@ home_html = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjeta de Presentación</title>
+    <title>Tarjeta de Presentación de Estudiante</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,7 +17,7 @@ home_html = """
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #e0f7e0; /* Verde pastel */
         }
         .card {
             background-color: white;
@@ -26,15 +26,17 @@ home_html = """
             max-width: 400px;
             text-align: center;
             padding: 20px;
+            border: 2px solid #a4d4a4; /* Verde pastel más oscuro */
         }
         .card img {
             border-radius: 50%;
-            width: 100px;
+            width: 130px;
             height: 150px;
         }
         .card h1 {
             font-size: 24px;
             margin: 10px 0;
+            color: #333;
         }
         .card p {
             font-size: 18px;
@@ -46,14 +48,15 @@ home_html = """
 <body>
     <div class="card">
         <img src="{{ url_for('static', filename='doval.jpg') }}" alt="Foto de Oswaldo">
-        <h1>TARJETA DE PRESENTACION</h1>
-        <h2>Oswaldo Azuara Morales</h2>
+        <h1>Tarjeta de presentacion</h1>
+        <p>Nombre: Oswaldo Azuara Morales</p>
         <p>Cuatrimestre: 9</p>
         <p>Grupo: A</p>
         <p>Matrícula: 20211318</p>
     </div>
 </body>
 </html>
+
 """
 
 @app.route('/')
