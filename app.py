@@ -1,4 +1,4 @@
-from flask import Flask, render_template_string
+from flask import Flask, render_template_string, url_for
 
 app = Flask(__name__)
 
@@ -45,9 +45,9 @@ home_html = """
 </head>
 <body>
     <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Foto de Oswaldo">
+        <img src="{{ url_for('static', filename='doval.jpg') }}" alt="Foto de Oswaldo">
         <h1>Oswaldo Azuara Morales</h1>
-        <p>Grupo: 9 A</p>
+        <p>Cuatrimestre: 9   Grupo: A</p>
         <p>Matrícula: 20211318</p>
     </div>
 </body>
