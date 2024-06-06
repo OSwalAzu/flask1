@@ -29,7 +29,7 @@ home_html = """
         }
         .card img {
             border-radius: 50%;
-            width: 150px;
+            width: 100px;
             height: 150px;
         }
         .card h1 {
@@ -46,8 +46,10 @@ home_html = """
 <body>
     <div class="card">
         <img src="{{ url_for('static', filename='doval.jpg') }}" alt="Foto de Oswaldo">
-        <h1>Oswaldo Azuara Morales</h1>
-        <p>Cuatrimestre: 9   Grupo: A</p>
+        <h1>TARJETA DE PRESENTACION</h1>
+        <h2>Oswaldo Azuara Morales</h2>
+        <p>Cuatrimestre: 9</p>
+        <p>Grupo: A</p>
         <p>Matrícula: 20211318</p>
     </div>
 </body>
